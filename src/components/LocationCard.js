@@ -1,18 +1,19 @@
 import React from 'react'
 
 //({ name, type, dimension, residents, image }) old props
-export default function LocationCard (props) {
-  // console.log('props', props.location);
-  const details = props.location;
-  console.log('details', details);
+export default function LocationCard ({ location }) {
+  console.log('details', { location });
 
   return (
-    <div>
-      <p>{details.name}</p>
-      {/* <img src={image} alt={name} /> */}
-      <p>{details.type}</p>
-      <p>{details.dimension}</p>
-      {/* <p>{residents}</p> */}
+    <div className="ui card">
+      <div className="content">
+        <a className="header">{location.type}</a>
+        <div className="description">{location.dimension}</div>
+      </div>
     </div>
   )
 }
+
+//name
+//detail
+//link with number of residesnts
