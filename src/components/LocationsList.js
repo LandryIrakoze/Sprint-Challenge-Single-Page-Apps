@@ -11,8 +11,8 @@ export default function LocationsList() {
             .then(response => {
                 const list = response.data.results;
                 setLocations(list);
-                console.log('response', response);
-                console.log('response', response.data.results)
+                // console.log('response', response);
+                // console.log('response', response.data.results)
             })
             .catch(response => {
                 console.log('its broken, please try again', response)

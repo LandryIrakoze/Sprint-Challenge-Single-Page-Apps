@@ -3,7 +3,7 @@ import axios from 'axios';
 import EpisodeCard from './EpisodeCard';
 
 export default function EpisodeList() {
-    const [url, setUrl] = useState('https://rickandmortyapi.com/api/character/');
+    const [url, setUrl] = useState('https://rickandmortyapi.com/api/episode/');
     const [episodes, setEpisodes] = useState([]);
   // TODO: Add useState to track data from useEffect
 
@@ -27,7 +27,7 @@ export default function EpisodeList() {
             <section className='episode-list grid-view'>
                 {
                     episodes.map(item => {
-                        return <EpisodeCard key={item.id} character={item} />
+                        return <EpisodeCard key={item.id} episode={item} />
                     })
                 }
             </section>

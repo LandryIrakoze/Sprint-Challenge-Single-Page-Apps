@@ -12,8 +12,8 @@ export default function CharacterList() {
       .then(response => {
         const list = response.data.results;
         setCharacters(list);
-        console.log('characters', characters);
-        console.log('response', response.data.results);
+        // console.log('characters', characters);
+        // console.log('response', response.data.results);
         
       })
       .catch(response => {
